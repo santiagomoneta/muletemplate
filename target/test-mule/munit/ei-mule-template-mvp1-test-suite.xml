@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="ei-mule-template-mvp1-test-suite.xml" />
+	<munit:test name="ei-mule-template-mvp1-test-suite-ei-mule-template-mvp1FlowTest" doc:id="31ef87bc-08b6-41b1-bc01-1aeec599b075" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to ei-mule-template-mvp1Flow" doc:id="2aa5707e-17da-4079-8224-cb03f4145bf7" name="ei-mule-template-mvp1Flow"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="ei-mule-template-mvp1-test-suite-ei-mule-template-mvp1FlowTest1" doc:id="dcc39810-5844-4ef5-9041-7e70c5b35f3b" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to ei-mule-template-mvp1Flow" doc:id="306dfa8e-01dd-4868-a107-15a39d73f036" name="ei-mule-template-mvp1Flow"/>
+		</munit:execution>
+	</munit:test>
+
+</mule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+
+	<flow name="ei-mule-template-mvp1Flow" doc:id="803c7414-bb35-4664-b44f-c355d46190e7" >
+		<http:listener doc:name="Listener" doc:id="3be208bd-0d44-40b2-a390-cb14d5f20696" path="${http.path}" config-ref="HTTP_Listener_config"/>
+		<set-variable value="${mule.env}" doc:name="Set Variable" doc:id="c2a0f078-f6d7-49d4-b291-7548ce6146c5" variableName="env"/>
+		<choice doc:name="Choice" doc:id="a3614b97-91dd-4696-8fd5-436ce1694ba5" >
+			<when expression='#[vars.env == "dev"]'>
+				<set-payload value="#['Hello to the Mule template! - DEV']" doc:name="Set Payload" doc:id="207a1d9f-222d-4ce8-9ed1-971b84d88dbb" />
+			</when>
+			<when expression='#[vars.env == "prod"]'>
+				<set-payload value="#['Hello to the Mule template! - PROD']" doc:name="Copy_of_Set Payload" doc:id="2fc20298-c4ec-4cd3-981e-65fb10e05064" />
+			</when>
+			<otherwise >
+				<set-payload value="#['Hello to the Mule template!']" doc:name="Copy_of_Set Payload" doc:id="bf34f4d0-bfbc-4100-88b5-b9f01d74d74a" />
+			</otherwise>
+		</choice>
+		<logger level="INFO" doc:name="Logger" doc:id="bbad70d3-8cd8-4fbe-b319-26e17a7d57eb" message="Flow complete" />
+	</flow>
+</mule>

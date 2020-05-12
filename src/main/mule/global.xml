@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1c059096-b389-4b42-a955-e028e73932bf" doc:description="HTTP listener global config">
+		<http:listener-connection host="${http.host}" port="${http.port}" />
+	</http:listener-config>
+	<global-property doc:name="Global Property" doc:id="8dcd3a93-bc41-453f-a49b-f56207292f0a" name="mule.env" value="dev" doc:description="Enviroment variable"/>
+	<configuration-properties doc:name="Configuration properties" doc:id="6deec725-b6e0-46a4-b7e5-e9c2d0eeadc6" file="properties/common.${mule.env}.properties.yaml" doc:description="Properties yaml file to be loaded"/>
+	<configuration doc:name="Configuration" doc:id="f58c7c82-3e52-4243-88c2-b1b48be9888a" defaultErrorHandler-ref="defaultErrorHandlerFlow" doc:description="All errors will be handled by this flow."/>
+</mule>
