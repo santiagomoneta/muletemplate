@@ -43,7 +43,8 @@ Every project need a strong and solid foundation, when your project grows, this 
 
 **What now?**
 
-- Take some time to check these:
+Take some time to check these:
+
 - [Mulesoft "Self-study" classes](https://training.mulesoft.com/category/mulesoftu)
 - [Mulesoft API-LED workshop](https://training.mulesoft.com/instructor-led-training/anypoint-platform-technical-workshop-public)
 - [What is API-LED?](https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/)
