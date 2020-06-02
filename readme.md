@@ -1,4 +1,5 @@
 
+
 Mule application template (MULE4)
 
 ![Dont be like homer](https://i.imgur.com/1Ya0fxu.jpg)
@@ -43,10 +44,10 @@ Every project need a strong and solid foundation, when your project grows, this 
 
 **What now?**
 
-- Take some time to check these:
-	- [Mulesoft "Self-study" classes](https://training.mulesoft.com/category/mulesoftu)
-	- [Mulesoft API-LED workshop](https://training.mulesoft.com/instructor-led-training/anypoint-platform-technical-workshop-public)
-	- [What is API-LED?](https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/)
+Take some time to check these:
+- [Mulesoft "Self-study" classes](https://training.mulesoft.com/category/mulesoftu)
+- [Mulesoft API-LED workshop](https://training.mulesoft.com/instructor-led-training/anypoint-platform-technical-workshop-public)
+- [What is API-LED?](https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/)
 - Build awesome applications!
 - Follow best practices
 - Think in re usability
